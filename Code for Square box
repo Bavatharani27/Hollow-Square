@@ -1,0 +1,10 @@
+def Square_Box():
+    width = int(input("Enter the width of the square: "))
+    for i in range(width):
+        for j in range(width):
+            if(i == 0 or j == 0 or i == width-1 or j == width-1):
+                print("*", end=" ")
+            else:
+                print(" ", end=" ")
+        print("\n")    
+Square_Box()
