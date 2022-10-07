@@ -6,5 +6,5 @@ def Square_Box():
                 print("*", end=" ")
             else:
                 print(" ", end=" ")
-        print("\n")    
+        print()    
 Square_Box()
