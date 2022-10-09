@@ -1,0 +1,44 @@
+=====Grade for one subject for all the students in the class====
+Enter the No of Students in a Class
+3
+Enter the Mark of Student 1
+87
+Grade B
+Enter the Mark of Student 2
+89
+Grade B
+Enter the Mark of Student 3
+45
+Fail
+Average Grade of class is C
+=====Grade for each subject for all the students in the class====
+Enter the No of Students in a Class
+3
+3
+Enter the Mark of Student 1 in Subject  1
+90
+Grade B
+Enter the Mark of Student 1 in Subject  2
+56
+Fail
+Enter the Mark of Student 1 in Subject  3
+76
+Grade C
+Enter the Mark of Student 2 in Subject  1
+89
+Grade B
+Enter the Mark of Student 2 in Subject  2
+78
+Grade C
+Enter the Mark of Student 2 in Subject  3
+67
+Grade D
+Enter the Mark of Student 3 in Subject  1
+90
+Grade B
+Enter the Mark of Student 3 in Subject  2
+91
+Grade A
+Enter the Mark of Student 3 in Subject  3
+87
+Grade B
