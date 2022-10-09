@@ -1,0 +1,12 @@
+import random
+def random_Number_Generation():
+    print("Enter the range to generate a random number: ")
+    range_num = int(input())
+    print("Enter the divisor to divide the random number: ")
+    divisor = int(input())
+    for i in range(1,range_num+1):
+        if(i%divisor==0):
+            print(i)
+            
+            
+random_Number_Generation()
