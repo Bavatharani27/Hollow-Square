@@ -1,0 +1,18 @@
+import datetime
+from  datetime  import date
+def flight_Tickets():
+    count = int(0)    #count initialisation
+    Dt1 = str(input("Today's date(DD MM YY): "))
+    print("Enter the no of booking per day: ")
+    No_Of_Bookings_Per_Day = int(input())
+    for i in range(0, No_Of_Bookings_Per_Day):
+        Dt1 = str(input("Enter the booking date(DD MM YY): "))
+        day, month, year = Dt1.split(' ')
+        day_Name = datetime.date(int(year), int(month), int(day))  # To get day name
+        Day = day_Name.strftime("%A")   
+        if(Day == "Saturday" or Day == "Sunday"):
+            count = count + 1
+    
+    print("No Of Weekend Tickets sold: ", count)
+
+flight_Tickets()   
