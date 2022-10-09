@@ -1,0 +1,16 @@
+def train_Ticket():
+    Madurai_To_Chennai = 1000
+    Return_Ticket_Cost = 750
+    Total_Cost = Madurai_To_Chennai + Return_Ticket_Cost
+    discount_percentage = 0.2
+    senior_Rate = 0.5
+    # To check is there any senior person exist in a family or not
+    Senior_Person_Exist = input("Is any senior persons in Your Family? True or False? \n")
+    if(Senior_Person_Exist == "True"):
+        new_discount_percentage = discount_percentage + senior_Rate
+        reduction = Total_Cost - (Total_Cost * new_discount_percentage)
+        print(reduction)
+    if(Senior_Person_Exist == "False"):
+        reduction = Total_Cost - (Total_Cost * discount_percentage)
+        print(reduction)
+train_Ticket()
