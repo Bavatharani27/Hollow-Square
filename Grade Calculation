@@ -1,0 +1,53 @@
+#grade for one subject for all the students in the class
+def Grade_Calculation(NoOfStudents):
+    Total = int(0)
+    Average = float(0)
+    for i in range(1, NoOfStudents+1):
+        print("Enter the Mark of Student", i)
+        Mark = int(input())
+        Total = Total + Mark
+        if(Mark > 90):
+            print("Grade A")
+        elif(Mark > 80):
+            print("Grade B")
+        elif(Mark > 70):
+            print("Grade C")
+        elif(Mark > 60):
+            print("Grade D")
+        else:
+            print("Fail")
+    #class avg grade for one subject
+    Average = Total/NoOfStudents
+    if(Average > 90):
+        print("Average Grade of class is A")
+    elif(Average > 80):
+        print("Average Grade of class is B")
+    elif(Average > 70):
+        print("Average Grade of class is C")
+    elif(Average > 60):
+        print("Average Grade of class is D")
+    else:
+        print("Fail")
+    
+#grade for each subject for all the students in the class
+def Grade_Calculation_For_Each_Subject(NoOfStudents, NoOfSubjects):
+    for i in range(1, NoOfStudents+1):
+        for j in range(1, NoOfSubjects+1):
+            print("Enter the Mark of Student", i, "in Subject ", j)
+            Mark = int(input())
+            if(Mark > 90):
+                print("Grade A")
+            elif(Mark > 80):
+                print("Grade B")
+            elif(Mark > 70):
+                print("Grade C")
+            elif(Mark > 60):
+                print("Grade D")
+            else:
+                print("Fail")
+print("=====Grade for one subject for all the students in the class====")
+print("Enter the No of Students in a Class")
+Grade_Calculation(int(input()))
+print("=====Grade for each subject for all the students in the class====")
+print("Enter the No of Students in a Class")
+Grade_Calculation_For_Each_Subject(int(input()), int(input()))
