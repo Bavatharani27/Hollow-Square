@@ -22,10 +22,12 @@ def Completed_Tasks():
     print("Completed Tasks List", Completed_Task_List)
     print("Pending Tasks List", Pending_Task_List)
     
+def Updated_Task_List():
     for j in range (len(Completed_Task_List)):
         if(Completed_Task_List[j] in task):
-            task.remove(task[j])
+            task.remove(Completed_Task_List[j])
     print("Updated Task", task)
     
 task_List()
 Completed_Tasks()
+Updated_Task_List()
