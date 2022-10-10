@@ -1,0 +1,18 @@
+Enter the no of task you have to do this week: 4
+Enter task No  1
+Task1
+Enter task No  2
+Task2
+Enter task No  3
+Task3
+Enter task No  4
+Task4
+List of tasks for this week ['Task1', 'Task2', 'Task3', 'Task4']
+Have You Completed Task 1 Yes
+Have You Completed Task 2 Yes
+Have You Completed Task 3 No
+Have You Completed Task 4 No
+Completed Tasks List ['Task1', 'Task2']
+Pending Tasks List ['Task3', 'Task4']
+Updated Task ['Task3', 'Task4']
+> 
