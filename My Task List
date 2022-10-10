@@ -1,0 +1,31 @@
+"""Often I forgot some less priority tasks assigned to me so for that i created a week wise tasklist and each day i have to update in 
+my task list which is completed and which is in pending """
+task = []
+Completed_Task_List = []
+Pending_Task_List = []
+
+number_Of_Tasks = int(input("Enter the no of task you have to do this week: "))
+def task_List():
+    for i in range(1,number_Of_Tasks+1):
+        print("Enter task No ", i)
+        weekly_Task = input()
+        task.append(weekly_Task)
+    print("List of tasks for this week", task)
+    
+def Completed_Tasks():
+    for i in range(1, number_Of_Tasks+1):
+        isCompleted = input("Have You Completed Task %d " %i)
+        if(isCompleted == "Yes"):
+            Completed_Task_List.append(task[i-1])
+        elif(isCompleted == "No"):
+            Pending_Task_List.append(task[i-1])
+    print("Completed Tasks List", Completed_Task_List)
+    print("Pending Tasks List", Pending_Task_List)
+    
+    for j in range (len(Completed_Task_List)):
+        if(Completed_Task_List[j] in task):
+            task.remove(task[j])
+    print("Updated Task", task)
+    
+task_List()
+Completed_Tasks()
