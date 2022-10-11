@@ -1,0 +1,28 @@
+import random
+def wordle_Game(answer, guess):
+    position = 0 
+    clue = ""
+    for i in guess:
+        if (i == answer[position]):
+            clue += 'G'
+        elif (i in answer):
+            clue += 'Y'
+        else:
+            clue += 'B'
+        position += 1
+    print(clue)
+    return clue == 'GGGG'
+   
+word_List = ['ARMY', 'BACK', 'CAFE', 'DOVE', 'EASY', 'FISH', 'GOAT', 'HUGE', 'ICON', 'JUMP', 'KILL', 'LONG', 'MUST', 'NEEM', 'OMIT', 'PINK', 'QUIZ', 'REAL', 'SOUP', 'TOUR', 'UGLY' 'VERY', 'WAGE', 'YOGA', 'ZONE']
+Allowed_Attempts = 0
+answer = random.choice(word_List)
+Correct_Guess = False
+while Allowed_Attempts < 5 and not Correct_Guess:
+    guess = input("Enter 4 letter word: ")
+    Allowed_Attempts += 1
+    
+    Correct_Guess = wordle_Game(answer, guess)
+if Correct_Guess:
+    print("Congrats! You guessed the correct word in",Allowed_Attempts, "attempts")
+else:
+    print("Game Over and the answer is", answer)
