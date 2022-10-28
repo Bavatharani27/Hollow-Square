@@ -7,3 +7,7 @@ for index in range(0, len(list1)):
             new_List.append(list1[index])
             break
 print(new_List)
+
+'''
+output : [1, 7, 13]
+'''
